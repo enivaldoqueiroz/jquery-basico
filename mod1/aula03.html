@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lógica de Desenvolvimento em JQuery</title>
+    <!--Usando JQuery Baixado e Renomendo -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        //Inicialização do elemento DOM
+
+        /*Usado quando queremos que uma função seja executado
+        ates mesmo dos elementos*/
+        $(document).ready(function(){
+            
+            /*
+            $('h1').css("color","#f66");
+            $('h1').hide();
+            $('h1').delay('1000');
+            $('h1').fadeIn("slow");
+            $('h1').text('Curso JQuery Basico');
+            */
+
+           /*
+           $('h1').css("color","#f66").hide().delay('1000').fadeIn("slow").text('Curso JQuery Basico');
+           */
+
+           //Selecionando um elemento no DOM no JQuery
+           /*$('h1')
+                .css("color","#f66")
+                .hide()
+                .delay('1000')
+                .fadeIn("slow")
+                .text('Curso JQuery Basico')
+                .click(function(){
+                    $('body').css("background","#C30");
+                    $('h1').css("color","#fff");
+                });
+            */
+            //Seleção de um elemento com display em bloco
+            $('a').css({color:'red', display:'block'});
+            //Seleção de uma class
+            $('.link2').css("color","green");
+            //Seleção de um id
+            $('#link3').css("color","#000");
+            //Seleção de todos os elementos atraves do '*' asterisco
+            //$('*').css("margin","0");
+            $('*').css("padding","10px");
+            //Seleção de mais de um elemento
+            $('h1, #link3').css("border-bottom","solid 6px blue");
+        });
+    </script>
+
+</head>
+<body>
+    <h1>JQuery</h1>
+
+    <a href="#">Link 1</a>
+    <a href="#" class="link2">Link 2</a>
+    <a href="#" id="link3" >Link 3</a>
+
+</body>
+</html>
