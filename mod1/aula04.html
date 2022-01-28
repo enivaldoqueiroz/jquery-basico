@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Hierarquicos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            
+            $('h2').css('margin','0');
+            $('p').css({margin:'0', color:'blue'});
+            $('.div1').css({'margin-bottom':'20px',background:'#ccc'});
+
+            //Selecionar os elementos filhos dentro dos elementos pai
+            $('.div1 span').hide().delay('1000').fadeIn(1000).css({color:'green','font-size':'15px'});
+            $('.div1 h2').hide().css({'font-size':'50px',color:'red'}).fadeIn(800);
+
+            //Seleção de filhos diretos de elementos
+            $('.div1 > span').css({color:'red'})
+
+            //Primeiro elemento após o selecionado
+            $('.p1 + p').css({'font-size':'20px'});
+            //Atacando todos os elementos após o selecionado
+            $('.p1 ~ p').css({color:'black'});
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div class="div1">
+        <h2>H2 Filho de DIV1</h2>
+        <p>P Filho de DIV1 <span>SPAN Filho de P</span></p>
+        <span>Span Filho DIV1</span>
+    </div>
+    <h2>H2 Fora de DIV1</h2>
+    <p class="p1">P1 Fora de DIV1</p>
+    <p>P2 Fora de DIV1</p>
+    <p>P3 Fora de DIV1</p>
+</body>
+</html>
