@@ -1,0 +1,21 @@
+body{font: 14px}
+
+.ex1{
+    width: 460px;
+    padding: 20px;
+    background: rgb(255, 41, 41);
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+p{
+    width: 480px;
+    padding: 5px;
+    background: #000;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border: 5px solid #ccc;
+    margin-top: 10px;
+}
