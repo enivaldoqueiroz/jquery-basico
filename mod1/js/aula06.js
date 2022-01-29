@@ -13,4 +13,13 @@ $(function(){
         $(this).css("background","#ccc");
         ex.text("Você deu dois cliques!");
     });
+
+    //Dar foco no campo
+    $('.ev3').focusin(function(){
+        $(this).css("background","#ccc");
+        ex.text("Você deu foco!"); 
+    }).focusout(function(){
+        $(this).css("background","#000");
+        ex.text("Você tirou o foco!");
+    });
 });

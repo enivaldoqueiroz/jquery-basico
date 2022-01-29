@@ -9,7 +9,7 @@ body{font: 14px}
     color: #fff;
 }
 
-p{
+p, input{
     width: 480px;
     padding: 5px;
     background: #000;
