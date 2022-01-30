@@ -22,4 +22,10 @@ $(function(){
         $(this).css("background","#000");
         ex.text("Você tirou o foco!");
     });
+
+    //
+    $('.ev4').hover(function(){
+        $(this).css("background","#ccc");
+        ex.text("Você passou o mouse!"); 
+    });
 });
