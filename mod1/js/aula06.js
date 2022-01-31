@@ -56,4 +56,12 @@ $(function(){
         ex.text("Mouse Leave");
     });
 
+    //Evendo que permite ver a movimentação do mouse no elemento
+    $('.ev8').mousemove(function(move){
+        var localX = move.pageX;
+        var localY = move.pageY;
+
+        ex.text("Movimento X: " + localX + " - Movimento Y: " + localY);
+    });
+
 });
