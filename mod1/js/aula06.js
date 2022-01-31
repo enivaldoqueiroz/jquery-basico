@@ -37,4 +37,23 @@ $(function(){
         $(this).css("background","#000");
         ex.text("Você soltou o botão do mouse!");
     });
+
+    //Evento que reconhece a passada do mouse em cima do elemento
+    var contadorEv6 = 0;
+    $('.ev6').mouseenter(function(){
+        contadorEv6 += 1;
+        ex.text("Entrada do mouse: " + contadorEv6);
+    }).mouseout(function(){
+        ex.text("Saida do mouse: ");
+    });
+
+    //Evento que reconhece a passada do mouse em cima do sub elemento
+    var contadorEv7 = 0;
+    $('.ev7').mouseover(function(){
+        contadorEv7 += 1;
+        ex.text("Mouse Over: " + contadorEv7);
+    }).mouseleave(function(){
+        ex.text("Mouse Leave");
+    });
+
 });
