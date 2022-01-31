@@ -23,9 +23,18 @@ $(function(){
         ex.text("Você tirou o foco!");
     });
 
-    //
+    //Evento que é ativado quando o mouse é passado por cima do elemento
     $('.ev4').hover(function(){
         $(this).css("background","#ccc");
         ex.text("Você passou o mouse!"); 
+    });
+
+    //Evento que é ativado quando clicamos em cima do elemento e soltamos o clique
+    $('.ev5').mousedown(function(){
+        $(this).css("background","#ccc");
+        ex.text("Você apertou o botão do mouse!");
+    }).mouseup(function(){
+        $(this).css("background","#000");
+        ex.text("Você soltou o botão do mouse!");
     });
 });
