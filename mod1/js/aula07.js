@@ -19,4 +19,19 @@ $(function(){
                 }
             });
     });
+
+    var ex = $('.ex1');
+    /* $('.key').keypress(function(){
+        ex.text($(this).val());
+    }); */
+
+    $('.key').keydown(function(){
+        ex.text($(this).val());
+    });
+
+    //.keyup() : vincule um manipulador de eventos ao evento JavaScript "keyup" ou acione esse evento em um elemento.
+    $('.key').keyup(function(){
+        ex.text($(this).val());
+    });
+
 });
