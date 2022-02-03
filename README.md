@@ -1,2 +1,2 @@
-# jquery-basico
+# Jquery Basico
 Curso de JQuery Básico (Estudos)
